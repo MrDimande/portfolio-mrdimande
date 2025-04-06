@@ -29,7 +29,7 @@ The goal of this portfolio is to:
 ## 🚀 Live Preview
 
 You can view the portfolio online here:  
-➡️ [https://github.com/MrDimande/portfolio-mrdimande.git](https://github.com/MrDimande/portfolio-mrdimande.gi)
+➡️ [View Portfolio](https://mrdimande.github.io/portfolio-mrdimande/)
 
 ## 📬 Contact
 
