@@ -1,0 +1,88 @@
+html {
+  overflow-y: scroll;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.work-section,
+.education-section,
+.skills-section,
+.languages-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.work-item,
+.education-item,
+.skills-item,
+.languages-item {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.work-item:hover,
+.education-item:hover,
+.skills-item:hover,
+.languages-item:hover {
+  transform: translateY(-10px);
+}
+
+.work-item h3,
+.education-item h3,
+.skills-item h3,
+.languages-item h3 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #00ffff;
+}
+
+.work-item strong,
+.education-item strong,
+.skills-item strong,
+.languages-item strong {
+  font-size: 1.3rem;
+}
+
+.section {
+  margin-top: 40px;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 12px;
+}
+
+.skills-section,
+.languages-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: left;
+}
+
+.skills-item,
+.languages-item {
+  padding: 20px;
+  background: #252525;
+  border-radius: 12px;
+}
+
+.skills-item h3,
+.languages-item h3 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  color: #4caf50;
+}
+
+.rating {
+  color: gold;
+  font-size: 1.2rem;
+}

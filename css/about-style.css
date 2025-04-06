@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h2 {
+  color: #00ffff;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #00ffff;
+}
+
+p {
+  text-align: justify;
+}
+
+p span {
+  color: #00ffff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50% 30% / 30% 50%;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+}
+
+.neon-text-container {
+  width: 700px; /* Mantém o espaço fixo */
+  height: 50px; /* Altura fixa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neon-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #00ffff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #00ffff; /* Cursor piscante */
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.text {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.text span {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 10s steps(40, end) infinite, fadeOut 12s infinite;
+}
+
+.urban-planner {
+  color: #00ffff;
+  animation-delay: 0s;
+}
+.separator1 {
+  color: #888888;
+  animation-delay: 4s;
+}
+.fullstack {
+  color: #ffcc00;
+  animation-delay: 4s;
+}
+.separator2 {
+  color: #888888;
+  animation-delay: 8s;
+}
+.gis-specialist {
+  color: #ff0077;
+  animation-delay: 8s;
+}
+
+/* Efeito de escrita */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Efeito de desaparecimento gradual */
+@keyframes fadeOut {
+  0%,
+  33% {
+    opacity: 1;
+  }
+  34%,
+  100% {
+    opacity: 0;
+  }
+}

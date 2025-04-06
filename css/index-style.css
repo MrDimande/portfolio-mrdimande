@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+.name-header {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: #222;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo i {
+  height: 45px;
+  width: 45px;
+  background-color: #00ffff;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.6rem;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo .logo-text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Hide the checkbox */
+.toggle-menu {
+  display: none;
+}
+
+/* Hides the hamburger button by default */
+.togglebtn {
+  display: none;
+}
+
+/* Styling the navigation */
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+nav .navlinks {
+  list-style-type: none;
+}
+
+nav .navlinks li {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+nav .navlinks li:hover {
+  color: #00ffff;
+  transition: color 0.2s ease-in-out;
+}
+
+nav .navlinks li a {
+  color: #e5e5ee;
+  margin-right: 2rem;
+  transition: color 0.3s;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.container .frame-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 15px solid #444;
+  box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.frame-photo img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.frame-photo img:hover {
+  transform: scale(1.2);
+}
+
+.frame-text {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame-text h5 {
+  color: #e5e5ee;
+  font-size: 16px;
+}
+.frame-text h5 span {
+  color: #00ffff;
+  font-size: 18px;
+}
+
+.frame-text h1 {
+  color: #00ffff;
+  font-size: 3rem;
+}
+
+.frame-text p {
+  color: #e5e5ee;
+  text-align: justify;
+}
+
+.btn-group {
+  margin: 45px 0px;
+}
+
+/* Default button style */
+.btn {
+  color: #fff;
+  background-color: #333;
+  padding: 12px 25px;
+  margin: 7px;
+  border-radius: 30px;
+  border: 2px solid #e5e5ee;
+  box-shadow: 0px 10px 10px -8px rgb(0 0 0 / 78%);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect only on the button under the cursor*/
+.btn.active:hover {
+  background-color: #444;
+  transform: scale(1.05);
+  border-color: #00ffff;
+}
+
+/* Click effect (active only when clicked) */
+.btn:active,
+.btn.active {
+  background-color: #666;
+  transform: scale(0.95);
+  border-color: #00ffff;
+}
+
+.frame-text .social-icons i {
+  display: inline-block;
+  color: #e5e5ee;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: 0.5s;
+  justify-content: flex-end;
+}
+
+.frame-text .social-icons i:hover {
+  color: #00ffff;
+  transform: rotate(360deg);
+}
+
+/* Display the normal menu only on large screens (≥1280px) */
+@media (min-width: 1280px) {
+  nav .navlinks {
+    display: flex;
+    list-style: none;
+  }
+
+  nav .navlinks li {
+    display: inline-block;
+    margin-right: 2.5rem;
+  }
+
+  nav .navlinks li a {
+    color: #e5e5ee;
+    transition: color 0.3s;
+  }
+
+  nav .navlinks li:hover a {
+    color: #00ffff;
+  }
+}
+
+/*Responsive Display for small Screem*/
+@media (max-width: 1279px) {
+  .logo.logo-text.togglebtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .togglebtn {
+    display: block; /* Displays the hamburger button */
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .togglebtn span {
+    display: block;
+    background-color: #00ffff;
+    margin: 6px 0;
+    width: 100%;
+    height: 4px;
+    transition: 0.3s;
+  }
+
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #222;
+    z-index: 3;
+    box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+  }
+
+  /*Show the menu when the checkbox is checked*/
+  .toggle-menu:checked + .navlinks {
+    display: block;
+  }
+
+  nav .navlinks li {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  nav .navlinks li a {
+    display: block;
+    color: #e5e5ee;
+    font-size: 18px;
+  }
+}
+
+/*Responsiveness for screens smaller than 768px*/
+@media (max-width: 768px) {
+  .logo.logo-text.togglebtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*Show the menu when the checkbox is checked*/
+  .toggle-menu:checked + .navlinks {
+    display: block;
+  }
+
+  nav .navlinks li {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  nav .navlinks li a {
+    display: block;
+    color: #e5e5ee;
+    font-size: 18px;
+  }
+
+  .container {
+    flex-direction: column;
+    max-width: 400px;
+    padding: 2rem;
+  }
+
+  .frame-text {
+    padding: 40px 0;
+  }
+}
