@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900');
 
+/* global-style.css */
+
+:root {
+  --cor-primaria: #00ffff;
+  --cor-texto-claro: #ffffff;
+  --cor-texto-neutro: #e5e5ee;
+  --cor-fundo-escuro: #111;
+  --cor-texto-escuro-1: #444;
+  --cor-texto-escuro-2: #555;
+  --cor-texto-escuro-principal: #333;
+  --cor-fundo-escuro-2: #222;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
